@@ -13,7 +13,7 @@ let workitems=[];
 
 let port=100; 
 
-app.listen(port,function(req,res){
+app.listen(process.env.PORT||port,function(req,res){
     console.log('server is running on port ' +port);
 })
 
