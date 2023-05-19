@@ -53,6 +53,9 @@ app.get('/',function(req,res){
 app.get('/work',function (req,res) {
     res.render("list",{listtitle:"work List",newlistitems:workitems});
   })
+app.get('/household',function (req,res) {
+    res.render("list",{listtitle:"Household List",newlistitems:workitems});
+  })
 app.get("/about",function(req,res){
     res.render("about");
 })
